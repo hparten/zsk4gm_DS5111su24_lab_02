@@ -1,0 +1,5 @@
+jupyterlab
+pandas
+openpyxl
+dotenv
+snowflake-connector-python[pandas]
