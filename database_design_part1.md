@@ -41,7 +41,7 @@
 
 9. **Draw and submit a Relational Model for your project.** *(5 PTS)*
    - For an example, see *Beginning Database Design Solutions* page 115 Figure 5-28. 
-  ![UVA Online MSDS Relational Model](https://github.com/user-attachments/assets/e3b329ea-b835-494c-bddd-ac6976f48d0e)
+![UVA MSDS Relational Database_final](https://github.com/user-attachments/assets/9ee8dce8-dbc2-427e-a074-073c816fc985)
 
 10. **Suppose you were asked if your database could also support the UVA SDS Residential MSDS Program. Explain any issues that might arise, changes to the database structure (schema), and new data that might be needed.** *(2 PTS)*
    - To support the Residential MSDS Program, I would need to update the schema to handle multiple programs. This would likely involve adding a `Program` table to associate courses, instructors, and assignments with each program.
