@@ -1,0 +1,5 @@
+.DS_Store
+.env
+.ipynb_checkpoints/
+current_learning_objectives_raw_data.xlsx
+env/*
