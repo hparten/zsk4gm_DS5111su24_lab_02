@@ -1,5 +1,44 @@
 # zsk4gm_DS5111su24_lab_02
 
+## Entity-Relationship Diagram
+```mermaid
+erDiagram
+    INSTRUCTORS {
+        varchar InstructorName PK
+        bool IsActive
+    }
+
+    COURSES {
+        varchar CourseMnemonic PK
+        varchar CourseName
+        varchar CourseDescription
+        bool IsActive
+    }
+
+    LEARNINGOUTCOMES {
+        varchar CourseMnemonic FK
+        varchar OutcomeDescription PK
+        bool IsActive
+    }
+
+    ASSIGNMENTS {
+        integer AssignmentID PK
+        varchar CourseMnemonic FK
+        varchar Term
+    }
+
+    INSTRUCTORASSIGNMENTS {
+        integer InstructorAssignmentID PK
+        integer AssignmentID FK
+        varchar InstructorName FK
+    }
+
+    INSTRUCTORS ||--o{ INSTRUCTORASSIGNMENTS : assigns
+    COURSES ||--|{ LEARNINGOUTCOMES : contains
+    COURSES ||--o{ ASSIGNMENTS : includes
+    ASSIGNMENTS ||--|{ INSTRUCTORASSIGNMENTS : involves
+```
+
 ## Manifest 
 
 ```bash
